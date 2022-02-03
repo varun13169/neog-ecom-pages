@@ -1,0 +1,122 @@
+@import "/styles.css";
+
+:root {}
+
+body {}
+
+.nav {}
+
+.nav__logo {}
+
+.nav__search {}
+
+.nav__actions {}
+
+.nav__login-btn {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+}
+
+.nav__wish-lst-btn {
+    position: relative;
+    width: 2.5rem;
+    height: 2.2rem;
+    width: auto;
+    height: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.nav__wish-lst-btn>div {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav__wish-lst-btn>svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav__card_lst-btn {
+    height: 2.3rem;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-content: center;
+}
+
+.nav__card_lst-btn>div {
+    display: flex;
+    align-items: center;
+}
+
+.nav__card_lst-btn>div>svg {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+
+
+/* sidebar Starts */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__fliter {
+    display: flex;
+    margin-bottom: 2.4rem;
+}
+
+.sidebar__fliter button {
+    margin-left: auto;
+}
+
+.sidebar__price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+}
+
+.sidebar__category {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+}
+
+.sidebar__category p {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar__rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__rating p {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar__sort-by {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__sort-by p {
+    margin-bottom: 0.8rem;
+}
+
+/* sidebar Ends */
+
+
+/* main content */
+.page-main {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* footer */
+.page-footer {}
