@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <div class="page-wrap">
+
+        <nav class="page-nav nav">
+            <h3 class="nav__logo dui-util-fw-bld">
+                MyWebside
+            </h3>
+
+            <!-- // Search -->
+            <div class="nav__search dui-inp-txt dui-inp-txt--search">
+                <i class="dui-inp-txt__icon dui-inp-txt__icon--search">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="dui-inp-txt__icon-content dui-inp-txt__icon-content--search icon icon-tabler icon-tabler-search"
+                        width="56" height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#059669" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                </i>
+                <input
+                    class="dui-inp-txt__input dui-inp-txt__input--search dui-util-txt-sm dui-util-bdr-radi-5px-s reset-input-inherit-parent"
+                    type="text" placeholder="Search">
+            </div>
+
+            <div class="nav__actions">
+                <!-- Login Button -->
+                <button
+                    class="nav__login-btn dui-btn dui-btn--primary-p2 dui-dui-util-txt-sm dui-util-spc-pad-0_8rem-xs dui-util-fw-bld reset-button-inherit-parent ">
+                    Login
+                </button>
+
+                <div>
+                    <button class="nav__wish-lst-btn dui-btn reset-button-inherit-parent">
+                        <div class="dui-badge dui-badge--round-ele-0_5-top-0_5-right">
+                            <div>
+                                0
+                            </div>
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="56"
+                            height="56" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9A9A9A" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="nav__card_lst-btn btn reset-button-inherit-parent">
+                    <div class="dui-util-clr-prim-p2">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="btn__icon icon icon-tabler icon-tabler-shopping-cart" width="56" height="56"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#9A9A9A" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="6" cy="19" r="2" />
+                            <circle cx="17" cy="19" r="2" />
+                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M6 5l14 1l-1 7h-13" />
+                        </svg>
+                        <p class="dui-util-fw-bld">Cart</p>
+                    </div>
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <aside class="page-sidebar sidebar dui-util-spc-pad-1_6rem-s">
+
+        </aside>
+
+        <main class="page-main main-content dui-util-spc-pad-2_4rem-m">
+
+            <div class="dui-auth-card dui-util-bdr-radi-10px-m dui-util-gry-shdw">
+                <h2 class="dui-auth-card__title dui-util-fw-bld">Signup</h2>
+
+
+                <!-- Input Component Starts -->
+                <div class="dui-inp-txt">
+                    <label for="username" class="dui-util-txt-sm dui-util-fw-sbld">Email Address
+                        <input
+                            class="dui-inp-txt__input dui-util-txt-sm dui-util-spc-pad-0_8rem-xs reset-input-inherit-parent"
+                            type="text" placeholder="sample@neog.camp">
+                        <p class="dui-util-txt-xsm dui-util-disp-none">*Some Additional Info</p>
+                    </label>
+                </div>
+                <!-- Input Component Ends -->
+
+                <!-- Input Component Starts -->
+                <div class="dui-inp-txt">
+                    <label for="username" class="dui-util-txt-sm dui-util-fw-sbld">Password
+                        <input
+                            class="dui-inp-txt__input dui-util-txt-sm dui-util-spc-pad-0_8rem-xs reset-input-inherit-parent"
+                            type="text" placeholder="Password">
+                        <p class="dui-util-txt-xsm dui-util-disp-none">*Please enter correct input</p>
+                    </label>
+                </div>
+                <!-- Input Component Ends -->
+
+                <div class="dui-auth-card__actions">
+                    <div class="dui-auth-card__sub-actions">
+                        <!-- Checkbox Component Starts -->
+                        <label class="dui-inp-chkbox dui-util-txt-sm dui-util-disp-inline-block">I accept all Terms &
+                            Conditions
+                            <input type="checkbox" checked="checked">
+                            <span class="dui-inp-chkbox__checkmark"></span>
+                        </label>
+                        <!-- Checkbox Component Ends -->
+                    </div>
+
+                    <!-- Button Component Starts -- Primary -->
+                    <button
+                        class="dui-btn dui-btn--primary dui-util-txt-sm dui-util-spc-pad-0_8rem-xs reset-button-inherit-parent">
+                        Create New Account
+                    </button>
+                    <!-- Button Component Ends -- Primary -->
+
+
+                    <!-- Link Button Component Starts -- Link Txt Primary -->
+                    <a class="dui-link dui-link--txt-primary dui-util-bdr-radi-5px-s dui-util-txt-sm dui-util-spc-pad-0_8rem-xs dui-util-disp-block"
+                        href="#">
+                        Already have an New Account
+                    </a>
+                    <!-- Link Button Component Ends -- Link Txt Primary -->
+                </div>
+
+
+
+            </div>
+        </main>
+
+        <footer class="page-footer footer">
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
