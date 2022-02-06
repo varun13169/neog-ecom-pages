@@ -1,0 +1,102 @@
+@import "/styles.css";
+
+.page-wrap {
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'content content content content content content'
+        'content content content content content content'
+        'footer footer footer footer footer footer';
+}
+
+
+
+/* Nav bar starts */
+.nav__wish-lst-btn {
+    position: relative;
+    width: 2.5rem;
+    height: 2.2rem;
+    width: auto;
+    height: auto;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.nav__wish-lst-btn>div {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav__wish-lst-btn>svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav__card_lst-btn {
+    height: 2.3rem;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    align-content: center;
+}
+
+.nav__card_lst-btn>div {
+    display: flex;
+    align-items: center;
+}
+
+.nav__card_lst-btn>div>svg {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+/* Nav Bar */
+
+.sidebar {
+    display: none;
+}
+
+
+
+.main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*  */
+
+/* Needs attention to get fixed */
+.dui-card {
+    width: 4rem;
+}
+
+.main-content__cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.dui-card:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+
+.dui-cart-details-card {
+
+    width: fit-content;
+    min-width: 50rem;
+    height: fit-content;
+    padding: 2rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
