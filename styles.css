@@ -1,66 +1,40 @@
 @import url("https://delta-ui-preview.netlify.app/library/component.css");
 
+@import "siteComponents/sidebar.css";
+@import "siteComponents/footer.css";
+
 .page-wrap {
     width: 100%;
     height: 100vh;
     background-color: #F7F7F7;
 
     display: grid;
-
     grid-auto-columns: 15rem 15rem 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 7.5rem 7.5rem auto auto;
-    
-    grid-template-areas: 
-    'nav nav nav nav nav nav'
-    'sidebar sidebar content content content content'
-    'sidebar sidebar content content content content'
-    'sidebar sidebar footer footer footer footer';
+    grid-auto-rows: 7.5rem auto auto 7.5rem;
+    grid-template-areas:
+        'p_nav p_nav p_nav p_nav p_nav p_nav'
+        'p_sidebar p_sidebar p_content p_content p_content p_content'
+        'p_sidebar p_sidebar p_content p_content p_content p_content'
+        'p_footer p_footer p_footer p_footer p_footer p_footer';
 }
 
 .page-nav {
-    grid-area: nav;
-
-    display: flex;
-    align-items: center;
-
-    background-color: var(--light-theme);
+    grid-area: p_nav;
 }
 
-.nav__logo {
-    flex-grow: 1;
-    margin: auto;
-    text-align: center;
-    color: var(--primary-color-p2);
-}
-
-.nav__search {
-    width: 24.75%;
-}
-
-.nav__actions {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-/* sidebar Starts */
+/* sidebar */
 .page-sidebar {
-    grid-area: sidebar;
-    background-color: var(--light-theme);
+    grid-area: p_sidebar;
 }
 
 
 /* content */
-.main-content {
-    grid-area: content;
-
-    overflow: scroll;
+.page-main {
+    grid-area: p_content;
+    overflow: auto;
 }
 
 /* footer */
-.footer {
-    grid-area: footer;
+.page-footer {
+    grid-area: p_footer;
 }
